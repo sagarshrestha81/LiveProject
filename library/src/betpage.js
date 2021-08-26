@@ -48,21 +48,22 @@ const calculateOdds = () => {
       $(".team-one-winning-amount").val(teamOneWinningAmount.toFixed(2));
       if(teamOneWinningAmount && amountValue){
          $('.total-amount-result').text((teamOneWinningAmount-amountValue).toFixed(2));
-         console.log(amountValue)
-         console.log(teamOneWinningAmount)
          $('.profit-amount').text(amountValue.toFixed(2));
          $('.grand-total-amount').text((teamOneWinningAmount).toFixed(2));
       }
      
     }
-    if ((teamOneOdds < 1.001 || teamOneStakeAmount < 1.001 || teamOneStakeAmount < 1.001 || teamTwoOdds < 1.001 || teamTwoStakeAmount < 1.001 || teamTwoStakeAmount < 1.001) && teamOneStakeAmount) {
-     $(".total-betting-error").text("Can't able to win with this Team 1 Amount");
-   } else {
+    if (teamOneStakeAmount) {
+      if(teamOneOdds < 1.001 || teamOneStakeAmount < 1.001 || teamOneStakeAmount < 1.001 || teamTwoOdds < 1.001 || teamTwoStakeAmount < 1.001 || teamTwoStakeAmount < 1.001){
+        $(".total-betting-error").text("Can't able to win with this Team 1 Amount");
+      }else {
   
-     $(".total-betting-error").text("");
-     $('.summary-section').removeClass('d-none');
-     
-   }
+        $(".total-betting-error").text("");
+        $('.summary-section').removeClass('d-none');
+        
+      }
+    
+   } 
   }
   
 
