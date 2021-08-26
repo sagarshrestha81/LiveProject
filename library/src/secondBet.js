@@ -20,7 +20,7 @@ const calculatePoints = (props) => {
       if (teamOnePoint > 18 && teamOnePoint - teamTwoPoint > 8) {
         $(".message-suggest").addClass("success-msg").removeClass("error-msg");
         $(".message-suggest").text("Low risk High Gain !!!");
-      } else if (teamOnePoint > 18 && (teamOnePoint - teamTwoPoint > 4 || teamOnePoint - teamTwoPoint <= 8)) {
+      } else if (teamOnePoint > 18 && (teamOnePoint - teamTwoPoint > 4 && teamOnePoint - teamTwoPoint <= 8)) {
         $(".message-suggest").addClass("success-msg").removeClass("error-msg");
         $(".message-suggest").text("Prefect time !!!");
       } else if (teamOnePoint > 18 && teamOnePoint - teamTwoPoint < 5) {
