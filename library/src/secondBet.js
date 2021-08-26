@@ -31,7 +31,7 @@ const calculatePoints = (props) => {
         $(".message-suggest").text("Get ready to bet !!!");
     } else if (teamOnePoint <= 14 && teamOnePoint - teamTwoPoint < 5) {
         $(".message-suggest").addClass("success-msg").removeClass("error-msg");
-        $(".message-suggest").text("Wait !!!");
+        $(".message-suggest").text("Wait to get right score !!!");
       } else if ((teamOnePoint > 20 && teamTwoPoint > 20)) {
         $(".message-suggest").removeClass("success-msg").addClass("error-msg");
         $(".message-suggest").text("High risk Quit this set !!!");
