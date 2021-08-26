@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doc</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <link href="./style.css" rel='stylesheet' />
+</head>
+
+<body>
+
+  <div class="container">
+
+   
+    <div class="row mt-3">
+      <h4>Calculate</h4>
+    
+
+      <div class="col-6">
+        <fieldset>
+          <legend>Team 1</legend>
+          <div class="mx-2 mb-2">
+
+
+            <div class="col-12">
+              <label class="profit-label" data="amount">Points</label>
+              <div class="input-group">
+                <input type="number"  placeholder="Greater point" class="team-one-points" required />
+              </div>
+            </div>
+            <div class="col-12">
+              <label class="profit-label" data="amount">Points left</label>
+              <div class="input-group">
+                <input type="number"  placeholder="" class="team-one-left-point" disable />
+              </div>
+            </div>
+            <div class="col-12">
+              <label class="profit-label" data="amount">Total</label>
+              <div class="input-group">
+                <input type="number"  placeholder="" class="team-one-total-point" value="25" />
+              </div>
+            </div>
+          </div>
+
+
+        </fieldset>
+
+      </div>
+      <div class="col-6">
+        <fieldset>
+          <legend>Team 2</legend>
+          <div class="mx-2 mb-2">
+
+
+            <div class="col-12">
+              <label class="profit-label" data="amount">Points</label>
+              <div class="input-group">
+                <input type="number"  placeholder="" class="team-two-point" required />
+              </div>
+            </div>
+            <div class="col-12">
+              <label class="profit-label" data="amount">Approx points collect</label>
+              <div class="input-group">
+                <input type="number"  placeholder="" class="team-two-approx-point" disabled />
+              </div>
+            </div>
+            <div class="col-12">
+              <label class="profit-label" data="amount">Total</label>
+              <div class="input-group">
+                <input type="number"  placeholder="" class="team-two-total-point" disabled />
+              </div>
+            </div>
+          </div>
+
+
+        </fieldset>
+
+      </div>
+      <div class="col-12">
+        <span class="error-msg message-suggest"></span>
+      </div>
+
+
+
+    </div>
+    <div class="row mt-3 summary-section">
+      <h4>Conclusion</h4>
+      <div class="col-sm-12">
+        <div class="overall-summary">
+        <label>Near point:</label>
+      <strong class="summary-result"><div class="near-point mx-1"></div><div>+0.5</div></strong> 
+      </div>
+      <div class="col-sm-12">
+        <div class="overall-summary">
+        <label>Suggested point:</label>
+      <strong class="summary-result"><div class="suggested-points mx-1"></div><div>+0.5</div> </strong> 
+      </div>
+      </div>
+      
+      </div>
+     
+
+
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+    integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="./secondBet.js"></script>
+</body>
+
+</html>

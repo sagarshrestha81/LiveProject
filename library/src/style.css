@@ -240,6 +240,13 @@ legend{
  
     display: flex;
 }
+.sites{
+  width: 100%;
+  text-align: end;
+}
+.success-msg{
+  color:#447c3d;
+}
 @media only screen and (max-width: 540px) {
   .col-half {
     width: 100%;
