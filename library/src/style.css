@@ -292,7 +292,12 @@ input[type=number] {
 }
 .message-suggest-box{
   font-size: 18px;
-  color:#000000
+  color:#000000;
+  position: absolute;
+  padding: 10px 0;
+}
+.calculate-section{
+  margin-top: 70px;
 }
 @media only screen and (max-width: 540px) {
   .col-half {
