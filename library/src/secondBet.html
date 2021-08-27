@@ -17,9 +17,9 @@
 
 <body>
 
-  <div class="container-fluid mt-3">
+  <div class="container-fluid">
 
-    <div class="row mt-3 summary-section">
+    <div class="row summary-section">
       <h4>Scores predict</h4>
       <div class="col-sm-12">
         <div class="overall-summary">
@@ -73,13 +73,19 @@
             <div class="col-12">
               <label class="profit-label" data="amount">Points left</label>
               <div class="input-group">
-                <input type="number"  placeholder="" class="team-one-left-point" disable />
+                <input type="number"  placeholder="" class="team-one-left-point" disabled />
               </div>
             </div>
             <div class="col-12">
               <label class="profit-label" data="amount">Total</label>
               <div class="input-group">
                 <input type="number"  placeholder="" class="team-one-total-point" value="25" />
+              </div>
+            </div>
+            <div class="col-12">
+              <label class="profit-label" data="amount">If continous</label>
+              <div class="input-group">
+                <input type="number"  placeholder="" class="team-one-continues-point" disabled />
               </div>
             </div>
           </div>
@@ -117,6 +123,12 @@
                 <input type="number"  placeholder="" class="team-two-total-point" disabled />
               </div>
             </div>
+            <div class="col-12">
+              <label class="profit-label" data="amount">If continous</label>
+              <div class="input-group">
+                <input type="number"  placeholder="" class="team-two-continues-point" disabled />
+              </div>
+            </div>
           </div>
 
 
@@ -131,6 +143,15 @@
 
 
 
+    </div>
+    <div class="row mt-1">
+      <div class="col-12">
+        <div class="message-suggest-box">
+          <span>Disclaimer:</span>
+          <span>This predict may not work for Women team play at your own risk</span>
+        </div>
+        
+      </div>
     </div>
     
   </div>

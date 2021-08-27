@@ -18,6 +18,8 @@ const calculatePoints = (props) => {
       $(".near-point").text(nearPoint);
       $(".suggested-points").text(nearPoint + 2);
       $(".sure-points").text(nearPoint + 4);
+      $(".team-one-continues-point").val(teamTwoPoint + teamOneTotalPoint);
+      $(".team-two-continues-point").val(teamOnePoint + teamOneTotalPoint);
       if (teamOnePoint > 22 && teamOnePoint - teamTwoPoint > 2) {
         $(".message-suggest").addClass("success-msg").removeClass("error-msg");
         $(".message-suggest").text("Low risk High Gain !!!");
