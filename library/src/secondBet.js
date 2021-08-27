@@ -25,14 +25,14 @@ const calculatePoints = (props) => {
         $(".message-suggest").addClass("success-msg").removeClass("error-msg");
         $(".message-suggest").text("High risk High Gain !!!");
       } 
-       else if(teamOnePoint > 18 && teamOnePoint - teamTwoPoint > 8) {
+       else if(teamOnePoint > 17 && teamOnePoint - teamTwoPoint > 8) {
         $(".message-suggest").addClass("success-msg").removeClass("error-msg");
         $(".message-suggest").text("Low risk High Gain !!!");
-      } else if (teamOnePoint > 18 && (teamOnePoint - teamTwoPoint > 4 && teamOnePoint - teamTwoPoint <= 8)) {
+      } else if (teamOnePoint > 17 && (teamOnePoint - teamTwoPoint > 4 && teamOnePoint - teamTwoPoint <= 8)) {
  
         $(".message-suggest").addClass("success-msg").removeClass("error-msg");
         $(".message-suggest").text("Prefect time !!!");
-      } else if (teamOnePoint > 18 && teamOnePoint - teamTwoPoint < 5) {
+      } else if (teamOnePoint > 17 && teamOnePoint - teamTwoPoint < 5) {
         $(".message-suggest").removeClass("success-msg").addClass("error-msg");
         $(".message-suggest").text("High risk !!!");
       } else if (teamOnePoint > 14 && teamOnePoint - teamTwoPoint > 5) {
