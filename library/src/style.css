@@ -284,6 +284,16 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+.btn{
+  width: 50%;
+}
+.d-flex{
+  display: flex;
+}
+.message-suggest-box{
+  font-size: 18px;
+  color:#000000
+}
 @media only screen and (max-width: 540px) {
   .col-half {
     width: 100%;

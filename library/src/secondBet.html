@@ -17,90 +17,10 @@
 
 <body>
 
-  <div class="container-fluid">
+  <div class="container-fluid mt-3">
 
-   
-    <div class="row mt-3">
-      <h4>Calculate</h4>
-    
-
-      <div class="col-6">
-        <fieldset>
-          <legend class="sec-page-legend">Team 1</legend>
-          <div class="mx-2 mb-2">
-
-
-            <div class="col-12">
-              <label class="profit-label" data="amount">Points</label>
-              <div class="input-group">
-                <input type="number"  placeholder="Greater point" class="team-one-point form-controls" required />
-                <div class="input-group-append">
-                  <button class="btn btn-success increase-team-1" type="button"><i class="fas fa-arrow-up"></i></button>
-                  <button class="btn btn-danger decrease-team-1" type="button"><i class="fas fa-arrow-down"></i></button>
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <label class="profit-label" data="amount">Points left</label>
-              <div class="input-group">
-                <input type="number"  placeholder="" class="team-one-left-point" disable />
-              </div>
-            </div>
-            <div class="col-12">
-              <label class="profit-label" data="amount">Total</label>
-              <div class="input-group">
-                <input type="number"  placeholder="" class="team-one-total-point" value="25" />
-              </div>
-            </div>
-          </div>
-
-
-        </fieldset>
-
-      </div>
-      <div class="col-6">
-        <fieldset>
-          <legend class="sec-page-legend">Team 2</legend>
-          <div class="mx-2 mb-2">
-
-
-            <div class="col-12">
-              <label class="profit-label" data="amount">Points</label>
-              <div class="input-group">
-                <input type="number"  placeholder="" class="team-two-point form-controls" required />
-                <div class="input-group-append">
-                  <button class="btn btn-success increase-team-2" type="button"><i class="fas fa-arrow-up"></i></button>
-                  <button class="btn btn-danger decrease-team-2 type="button"><i class="fas fa-arrow-down"></i></button>
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <label class="profit-label" data="amount">Approx points</label>
-              <div class="input-group">
-                <input type="number"  placeholder="" class="team-two-approx-point" disabled />
-              </div>
-            </div>
-            <div class="col-12">
-              <label class="profit-label" data="amount">Total</label>
-              <div class="input-group">
-                <input type="number"  placeholder="" class="team-two-total-point" disabled />
-              </div>
-            </div>
-          </div>
-
-
-        </fieldset>
-
-      </div>
-      <div class="col-12">
-        <span class="error-msg message-suggest"></span>
-      </div>
-
-
-
-    </div>
     <div class="row mt-3 summary-section">
-      <h4>Conclusion</h4>
+      <h4>Scores predict</h4>
       <div class="col-sm-12">
         <div class="overall-summary">
         <label>Near point:</label>
@@ -124,6 +44,95 @@
 
 
     </div>
+    <div class="row mt-3">
+      <div class="col-12">
+        <div class="message-suggest-box">
+          <span>Suggest:</span>
+          <span class="success-msg message-suggest">Put scores in points section</span>
+        </div>
+        
+      </div>
+    </div>
+    <div class="row mt-3">
+      <h4>Calculate</h4>
+    
+
+      <div class="col-6">
+        <fieldset>
+          <legend class="sec-page-legend">Team 1</legend>
+          <div class="mx-2 mb-2">
+
+
+            <div class="col-12">
+              <label class="profit-label" data="amount">Points</label>
+              <div class="input-group">
+                <input type="number"  placeholder="Greater point" class="team-one-point form-controls" required />
+                
+              </div>
+            </div>
+            <div class="col-12">
+              <label class="profit-label" data="amount">Points left</label>
+              <div class="input-group">
+                <input type="number"  placeholder="" class="team-one-left-point" disable />
+              </div>
+            </div>
+            <div class="col-12">
+              <label class="profit-label" data="amount">Total</label>
+              <div class="input-group">
+                <input type="number"  placeholder="" class="team-one-total-point" value="25" />
+              </div>
+            </div>
+          </div>
+
+
+        </fieldset>
+        <div class="input-group-append mt-2 d-flex">
+          <button class="btn btn-success increase-team-1" type="button"><i class="fas fa-arrow-up"></i></button>
+          <button class="btn btn-danger decrease-team-1" type="button"><i class="fas fa-arrow-down"></i></button>
+        </div>
+
+      </div>
+      <div class="col-6">
+        <fieldset>
+          <legend class="sec-page-legend">Team 2</legend>
+          <div class="mx-2 mb-2">
+
+
+            <div class="col-12">
+              <label class="profit-label" data="amount">Points</label>
+              <div class="input-group">
+                <input type="number"  placeholder="" class="team-two-point form-controls" required />
+               
+              </div>
+            </div>
+            <div class="col-12">
+              <label class="profit-label" data="amount">Approx points</label>
+              <div class="input-group">
+                <input type="number"  placeholder="" class="team-two-approx-point" disabled />
+              </div>
+            </div>
+            <div class="col-12">
+              <label class="profit-label" data="amount">Total</label>
+              <div class="input-group">
+                <input type="number"  placeholder="" class="team-two-total-point" disabled />
+              </div>
+            </div>
+          </div>
+
+
+        </fieldset>
+        <div class="input-group-append  mt-2 d-flex">
+          <button class="btn btn-success increase-team-2" type="button"><i class="fas fa-arrow-up"></i></button>
+          <button class="btn btn-danger decrease-team-2" type="button"><i class="fas fa-arrow-down"></i></button>
+        </div>
+
+      </div>
+     
+
+
+
+    </div>
+    
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
