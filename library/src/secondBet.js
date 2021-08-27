@@ -1,5 +1,5 @@
 const calculatePoints = (props) => {
-  var teamOnePoint = parseInt($(".team-one-points").val());
+  var teamOnePoint = parseInt($(".team-one-point").val());
   const teamOneTotalPoint = parseInt($(".team-one-total-point").val());
   var teamTwoPoint = parseInt($(".team-two-point").val());
   if (teamOnePoint && teamTwoPoint) {
@@ -55,26 +55,32 @@ const calculatePoints = (props) => {
     }
   }
 };
-$(document).bind("click hover keyup", ".team-one-points", function () {
+$(document).bind("click hover keyup", ".team-one-point", function () {
   calculatePoints();
 });
 $(document).bind("click hover keyup", ".team-two-point", function () {
   calculatePoints();
 });
-$(document).bind("click", ".increase-team-1", function () {
-  $(".team-one-points").val(parseInt($(".team-one-points").val()+1));
+$(document).on("click", ".increase-team-1", function () {
+  var number=parseInt($(".team-one-point").val())+1;
+  console.log(number)
+  $(".team-one-point").val(number);
+  
   
   calculatePoints();
 });
-$(document).bind("click", ".decrease-team-1", function () {
-  $(".team-one-points").val(parseInt($(".team-one-points").val()-1));
+$(document).on("click", ".decrease-team-1", function () {
+  var number =parseInt($(".team-one-point").val())-1;
+  $(".team-one-point").val(number);
   calculatePoints();
 });
-$(document).bind("click", ".increase-team-2", function () {
-  $(".team-two-points").val(parseInt($(".team-two-points").val()+1));
+$(document).on("click", ".increase-team-2", function () {
+  var number =parseInt($(".team-two-point").val())+1;
+  $(".team-two-points").val(number);
   calculatePoints();
 });
-$(document).bind("click", ".decrease-team-2", function () {
-  $(".team-two-points").val(parseInt($(".team-two-points").val()-1));
+$(document).on("click", ".decrease-team-2", function () {
+  var number =parseInt($(".team-two-point").val())-1;
+  $(".team-two-points").val(number);
   calculatePoints();
 });
