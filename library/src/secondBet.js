@@ -25,14 +25,14 @@ const calculatePoints = (props) => {
         $(".message-suggest").addClass("success-msg").removeClass("error-msg");
         $(".message-suggest").text("High risk High Gain !!!");
       } 
-       else if(teamOnePoint > 17 && teamOnePoint - teamTwoPoint > 8) {
+       else if(teamOnePoint > 18 && teamOnePoint - teamTwoPoint > 8) {
         $(".message-suggest").addClass("success-msg").removeClass("error-msg");
         $(".message-suggest").text("Low risk High Gain !!!");
-      } else if (teamOnePoint > 17 && (teamOnePoint - teamTwoPoint > 4 && teamOnePoint - teamTwoPoint <= 8)) {
+      } else if (teamOnePoint > 18 && (teamOnePoint - teamTwoPoint > 4 && teamOnePoint - teamTwoPoint <= 8)) {
  
         $(".message-suggest").addClass("success-msg").removeClass("error-msg");
         $(".message-suggest").text("Prefect time !!!");
-      } else if (teamOnePoint > 17 && teamOnePoint - teamTwoPoint < 5) {
+      } else if (teamOnePoint > 18 && teamOnePoint - teamTwoPoint < 5) {
         $(".message-suggest").removeClass("success-msg").addClass("error-msg");
         $(".message-suggest").text("High risk !!!");
       } else if (teamOnePoint > 14 && teamOnePoint - teamTwoPoint > 5) {
@@ -55,9 +55,26 @@ const calculatePoints = (props) => {
     }
   }
 };
-$(document).on("keyup", ".team-one-points", function () {
+$(document).bind("click hover keyup", ".team-one-points", function () {
   calculatePoints();
 });
-$(document).on("keyup", ".team-two-point", function () {
+$(document).bind("click hover keyup", ".team-two-point", function () {
+  calculatePoints();
+});
+$(document).bind("click", ".increase-team-1", function () {
+  $(".team-one-points").val(parseInt($(".team-one-points").val()+1));
+  
+  calculatePoints();
+});
+$(document).bind("click", ".decrease-team-1", function () {
+  $(".team-one-points").val(parseInt($(".team-one-points").val()-1));
+  calculatePoints();
+});
+$(document).bind("click", ".increase-team-2", function () {
+  $(".team-two-points").val(parseInt($(".team-two-points").val()+1));
+  calculatePoints();
+});
+$(document).bind("click", ".decrease-team-2", function () {
+  $(".team-two-points").val(parseInt($(".team-two-points").val()-1));
   calculatePoints();
 });
