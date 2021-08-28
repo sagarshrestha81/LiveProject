@@ -64,6 +64,7 @@ $(document).bind("click hover keyup", ".team-two-point", function () {
   calculatePoints();
 });
 $(document).on("click", ".increase-team-1", function () {
+  calculatePoints();
   var number=parseInt($(".team-one-point").val())+1;
   if(isNaN(number) || number<0){
     number=1;
@@ -71,30 +72,33 @@ $(document).on("click", ".increase-team-1", function () {
   $(".team-one-point").val(number);
   
   
-  calculatePoints();
+
 });
 $(document).on("click", ".decrease-team-1", function () {
+  calculatePoints();
   var number =parseInt($(".team-one-point").val())-1;
   if(isNaN(number) || number<0){
     number=0;
   }
   $(".team-one-point").val(number);
-  calculatePoints();
+  
 });
 $(document).on("click", ".increase-team-2", function () {
+  calculatePoints();
   var number =parseInt($(".team-two-point").val())+1;
 
   if(isNaN(number) || number<0){
     number=1;
   }
   $(".team-two-point").val(number);
-  calculatePoints();
+ 
 });
 $(document).on("click", ".decrease-team-2", function () {
+  calculatePoints();
   var number =parseInt($(".team-two-point").val())-1;
   if(isNaN(number) || number<0){
     number=0;
   }
   $(".team-two-point").val(number);
-  calculatePoints();
+ 
 });
